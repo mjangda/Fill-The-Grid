@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Crossword</title>
+
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="js/grid.js"></script>
+
+
+<link rel="stylesheet" media="screen" href="css/screen.css" />
+<style type="text/css">
+
+	body{ background: #999;}
+	/* Structure */
+	#container { background: #fff; width:900px; margin: 10px auto; padding: 10px; border: 1px solid #666; }
+	#crossword-clues { width: 350px; }
+	#crossword-blocks { float:right }
+
+
+	/* Styles */
+	.block 					{ width: 35px; height: 35px; border: 1px solid #000; float:left; text-align: center; position: relative; }
+	.block-blank 			{ background: #000; }
+	.block-letter 			{ background: #fff; }
+	.block-letter-correct 	{ }
+	.block-letter-incorrect { }
+
+		.block-input input		{ 
+			text-transform: uppercase; 
+			text-align: center;
+			vertical-align: middle;
+			font-size: 25px;
+			
+			width: 30px;
+			height: 30px;
+		}
+		.clue-number {
+			position: absolute;
+			color: #666;
+			top: 2px;
+			left: 2px;
+		}
+		
+		.active-block {
+			background: yellow;
+		}
+			.active-block input {
+				background: yellow;
+			}
+	
+	#crossword-clues {
+		
+	}
+	
+		.crossword-clue {
+			display: block;
+		}
+		.active-clue {
+			font-weight: bold;
+		}
+			
+	
+	.clickable {
+		cursor: pointer;
+		color: blue;
+		text-decoration: underline;
+	}
+	
+	.clear {
+		clear: both;
+	}
+
+
+</style>
+</head>
+
+<body>
+
+<div id="container">
+	<h1>CROSSWORD</h1>
+
+	
+	<div id="crossword">
+	
+	</div>
+	
+	
+	<div id="tools">
+	
+		<span class="clickable" id="revealAll">Reveal All</span>
+		
+	</div>
+	
+
+	<div id="debug">
+	
+	</div>
+	<div class="clear"></div>
+</div>
+
+</body>
+</html>
